@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/uitls/assets.dart';
 import 'package:flutter/material.dart';
 
 class FeaturedListViewItem extends StatelessWidget {
@@ -12,7 +13,7 @@ class FeaturedListViewItem extends StatelessWidget {
             color: Colors.red,
             borderRadius: BorderRadius.circular(16),
             image: const DecorationImage(
-                fit: BoxFit.fill, image: AssetImage('assets/images/test.jpg'))),
+                fit: BoxFit.fill, image: AssetImage(AssetsData.test))),
       ),
     );
   }
