@@ -9,19 +9,20 @@ class CutomButton extends StatelessWidget {
     this.borderRadius,
     required this.text,
     this.fontSize,
+    this.onPressed,
   });
   final String text;
   final Color backGroundColor;
   final Color textColor;
   final double? fontSize;
   final BorderRadius? borderRadius;
-
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 48,
       child: TextButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: TextButton.styleFrom(
             backgroundColor: backGroundColor,
             shape: RoundedRectangleBorder(
