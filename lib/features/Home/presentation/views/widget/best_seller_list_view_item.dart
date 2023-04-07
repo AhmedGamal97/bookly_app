@@ -22,7 +22,8 @@ class BookListViewItem extends StatelessWidget {
         child: Row(
           children: [
             CustomBookImage(
-                imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail ?? ''),
+                imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail ??
+                    'https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg'),
             const SizedBox(
               width: 30,
             ),

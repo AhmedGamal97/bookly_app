@@ -19,7 +19,7 @@ class BooksAction extends StatelessWidget {
               topLeft: Radius.circular(16),
               bottomLeft: Radius.circular(16),
             ),
-            text: '19.99€',
+            text: 'Free',
           )),
           Expanded(
               child: CutomButton(
@@ -30,7 +30,7 @@ class BooksAction extends StatelessWidget {
               topRight: Radius.circular(16),
               bottomRight: Radius.circular(16),
             ),
-            text: 'Free Preview',
+            text: 'Preview',
           )),
         ],
       ),
